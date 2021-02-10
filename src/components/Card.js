@@ -1,15 +1,15 @@
 import React from 'react';
 import './Card.css';
 
-function Card(){
+function Card(props){
     return(
         <div className='card'>
-            <img src='images/image-colton.jpg' alt='auth'/>
+            <img src={`images/${props.url}`} alt='auth'/>
             <div className='auth'>
-                <h4>Calton Smith</h4>
+                <h4>{props.auther}</h4>
                 <b>Verified Buyer</b>
             </div>
-            <p>&#8220;We needed the same printed design as the one we had ordered a week prior. Not only did they find original order, but we also received it in time. Excellent! &#8221;</p>
+            <p>&#8220; {props.text} &#8221;</p>
         </div>
         );
 }
