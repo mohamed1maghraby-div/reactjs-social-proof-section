@@ -1,0 +1,10 @@
+.section-two{
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+@media (max-width: 600px){
+    .section-two{
+        flex-direction: column;
+    }
+}

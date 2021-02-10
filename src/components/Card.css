@@ -1,0 +1,61 @@
+.card{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    height: 150px;
+    padding: 30px;
+    margin: 15px;
+    flex: 1;
+}
+.card:nth-child(2){
+    margin-top: 30px;
+}
+.card:nth-child(3){
+    margin-top: 45px;
+}
+.card img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    float: left;
+    display: block;
+}
+.card h4 , .card p {
+    color: hsl(0, 0%, 100%);
+}
+.card h4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 13px;
+}
+.card b{
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 13px;
+}
+b{
+    color: hsl(333, 80%, 67%);
+}
+.auth{
+    display: block;
+    float: left;
+    margin-left: 20px;
+}
+.card p {
+    display: block;
+    clear: both;
+    position: relative;
+    top: 15px;
+    line-height: 22px;
+    font-size: 13px;
+}
+@media (max-width: 999px) {
+    .card{
+        height: auto;
+    }
+}
+@media (max-width: 600px){
+    .card:nth-child(2), .card:nth-child(3){
+        margin-top: 15px;
+    }
+}

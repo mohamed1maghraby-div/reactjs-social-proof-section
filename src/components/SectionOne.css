@@ -1,0 +1,40 @@
+.section-one{
+    display: flex;
+    
+}
+.part-1, .part-2{
+    flex: 1;
+}
+
+h1 , span{
+    color: hsl(300, 43%, 22%);
+}
+h1{
+    padding-right: 16%;
+    font-size: 3.5rem;
+    margin: 0;
+    line-height: .9;
+}
+.section-one p{
+    color: hsl(303, 10%, 53%);
+    font-size: 18px;
+    margin-top: 25px;
+}
+.part-2{
+    margin-left: 45px;
+}
+@media (max-width: 999px) {
+    .section-one{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    h1{
+        padding-right: 0;
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    .section-one{
+        text-align: center;
+    }
+}

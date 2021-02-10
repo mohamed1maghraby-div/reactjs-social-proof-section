@@ -1,0 +1,21 @@
+body{
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+}
+.container{
+  padding: 125px 165px 100px 165px;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .container{
+    padding: 0;
+  }
+}
+
+.container::after{
+  content: '';
+  background: url('http://localhost:3000/public/images/bg-pattern-bottom-desktop.svg');
+  position: absolute;
+  top: 0;
+  left: 0;
+}
